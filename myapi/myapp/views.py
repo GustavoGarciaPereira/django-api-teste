@@ -24,5 +24,3 @@ class MusicDetail(generics.RetrieveUpdateDestroyAPIView):
 class AlgumList(generics.ListCreateAPIView):
     queryset = Album.objects.all()
     serializer_class = AlbumSerializer
-    authentication_classes = [SessionAuthentication]
-    permission_classes = (IsAuthenticated, )
